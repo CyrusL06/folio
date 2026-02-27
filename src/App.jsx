@@ -93,7 +93,7 @@ export default function App() {
       <main id="top">
         <section className="hero">
           <div className="hero-inner">
-            <p className="kicker">Vittorio Rivabella</p>
+            <p className="kicker">Cyrus Lorenzo</p>
             <h1>Engineer, AI Researcher & Speaker.</h1>
             <p className="hero-copy">
               I am helping people and businesses adopt AI thoughtfully and
