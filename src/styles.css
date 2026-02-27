@@ -48,6 +48,13 @@ a {
   letter-spacing: 0.14em;
 }
 
+.brand-logo {
+  display: block;
+  width: 58px;
+  height: auto;
+  border: 1px solid color-mix(in oklab, var(--line), transparent 10%);
+}
+
 nav {
   display: flex;
   gap: clamp(0.8rem, 2.5vw, 1.5rem);

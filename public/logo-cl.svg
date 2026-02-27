@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 183" role="img" aria-labelledby="title desc">
+  <title id="title">CL Logo</title>
+  <desc id="desc">Dark rectangular logo with ivory CL initials.</desc>
+  <rect width="280" height="183" fill="#03060d" />
+  <text
+    x="28"
+    y="128"
+    fill="#efe8dc"
+    font-family="'Times New Roman', 'Iowan Old Style', serif"
+    font-size="102"
+    letter-spacing="2"
+  >
+    CL
+  </text>
+</svg>
