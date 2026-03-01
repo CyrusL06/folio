@@ -13,6 +13,35 @@ export default function App() {
     return () => window.removeEventListener("pointermove", onMove);
   }, []);
 
+  useEffect(() => {
+    if (!("IntersectionObserver" in window)) return;
+
+    const revealNodes = document.querySelectorAll(".reveal");
+    if (revealNodes.length === 0) return;
+
+    document.body.classList.add("motion-ready");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        threshold: 0.18,
+        rootMargin: "0px 0px -8% 0px",
+      }
+    );
+
+    revealNodes.forEach((node) => observer.observe(node));
+
+    return () => {
+      observer.disconnect();
+      document.body.classList.remove("motion-ready");
+    };
+  }, []);
+
   return (
     <>
       <div
@@ -21,7 +50,7 @@ export default function App() {
         aria-hidden
       />
 
-      <header className="site-header">
+      <header className="site-header header-entrance">
         <a className="brand" href="#top" aria-label="Home">
           CL
         </a>
@@ -36,7 +65,7 @@ export default function App() {
 
       <main id="top">
         <section className="hero">
-          <div className="hero-inner">
+          <div className="hero-inner hero-intro">
             <p className="kicker">Cyrus Lorenzo</p>
             <h1>Engineer, AI Researcher & Speaker.</h1>
             <p className="hero-copy">
@@ -49,7 +78,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="about" className="section">
+        <section id="about" className="section reveal">
           <h2>About</h2>
           <p>
             I am a Product Engineer and AI Researcher. Over the last years I
@@ -66,11 +95,15 @@ export default function App() {
           </p>
         </section>
 
-        <section id="projects" className="section">
+        <section id="projects" className="section reveal">
           <h2>Projects</h2>
           <div className="list">
-            {projects.map((item) => (
-              <article key={item.title} className="list-item">
+            {projects.map((item, index) => (
+              <article
+                key={item.title}
+                className="list-item reveal"
+                style={{ "--delay": `${index * 90}ms` }}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.body}</p>
                 <a href={item.link}>See project</a>
@@ -79,11 +112,15 @@ export default function App() {
           </div>
         </section>
 
-        <section id="speaking" className="section">
+        {/* <section id="speaking" className="section reveal">
           <h2>Speaking</h2>
           <ul className="entry-list">
-            {speaking.map((item) => (
-              <li key={item.title} className="entry">
+            {speaking.map((item, index) => (
+              <li
+                key={item.title}
+                className="entry reveal"
+                style={{ "--delay": `${index * 90}ms` }}
+              >
                 <p className="entry-title">
                   {item.title} <span>| {item.venue}</span>
                 </p>
@@ -91,13 +128,17 @@ export default function App() {
               </li>
             ))}
           </ul>
-        </section>
+        </section> */}
 
-        <section id="writing" className="section">
+        <section id="writing" className="section reveal">
           <h2>Writing</h2>
           <ul className="entry-list">
-            {writing.map((item) => (
-              <li key={item.title} className="entry">
+            {writing.map((item, index) => (
+              <li
+                key={item.title}
+                className="entry reveal"
+                style={{ "--delay": `${index * 90}ms` }}
+              >
                 <p className="entry-title">
                   <span>{item.date}</span> {item.title}
                 </p>
@@ -107,7 +148,7 @@ export default function App() {
           </ul>
         </section>
 
-        <section id="connect" className="section">
+        <section id="connect" className="section reveal">
           <h2>Connect</h2>
           <div className="connect-links">
             {social.map((item) => (
