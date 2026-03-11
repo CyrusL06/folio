@@ -73,7 +73,7 @@ export default function App() {
              <br className="hidden"/>late-night commits and coffee  
             </p>
             <a className="scroll-down" href="#about">
-              Scroll down
+              Scroll down ↓
             </a>
           </div>
         </section>
