@@ -69,8 +69,8 @@ export default function App() {
             <p className="kicker">Undergraduate</p>
             <h1>Cyrus Lorenzo</h1>
             <p className="hero-copy">
-              Rising software developer crafting digital experiences from scratch,
-              fueled by curiosity, late-night commits, and coffee
+             Crafting digital expreriences from scratch, fueled by curiosity, 
+             late-night commits and coffee  
             </p>
             <a className="scroll-down" href="#about">
               Scroll down

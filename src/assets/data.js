@@ -51,8 +51,8 @@ export const writing = [
 ];
 
 export const social = [
-  { label: "Email", href: "mailto:hello@example.com" },
-  { label: "X / Twitter", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Instagram", href: "#" },
+  { label: "Email", href: "cyruslorenzo0626@gmail.com" },
+  // { label: "X / Twitter", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/cyruslorenzo/" },
+  { label: "Github", href: "https://github.com/CyrusL06" },
 ];
