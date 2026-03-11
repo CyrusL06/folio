@@ -13,19 +13,19 @@ export const clients = [
 export const projects = [
   {
     title: "2D-Game Development Java",
-    body: "How the AI songs we create can spark nostalgia and emotional value that grows over time.",
-    link: "#",
+    body: "Open 2D world game inspired by the classic pokemon",
+    link: "https://github.com/CyrusL06/2D-Gaming-Java",
   },
     {
     title: "TrackerGen Application",
-    body: "How AI developments may redefine interfaces and set the path for future devices.",
-    link: "#",
+    body: "Application that tracks money flows, with minimalistic design",
+    link: "https://github.com/CyrusL06/TrackerGen-",
   },
   {
     title: "3D Landing Page - Three.js",
-    body: "How AI can help identify and shape the elements of songs that can top charts.",
-    link: "#",
-  },
+    body: "Three.js static website",
+    link: "https://github.com/CyrusL06/3D-Portfolio",
+  }
   // {
   //   title: "Expense Tracker",
   //   body: "How AI developments may redefine interfaces and set the path for future devices.",
