@@ -70,7 +70,7 @@ export default function App() {
             <h1>Cyrus Lorenzo</h1>
             <p className="hero-copy">
              Crafting digital expreriences from scratch, fueled by curiosity, 
-             late-night commits and coffee  
+             <br className="hidden"/>late-night commits and coffee  
             </p>
             <a className="scroll-down" href="#about">
               Scroll down
