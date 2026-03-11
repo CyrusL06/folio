@@ -66,11 +66,11 @@ export default function App() {
       <main id="top">
         <section className="hero">
           <div className="hero-inner hero-intro">
-            <p className="kicker">Cyrus Lorenzo</p>
-            <h1>Engineer, AI Researcher & Speaker.</h1>
+            <p className="kicker">Undergraduate</p>
+            <h1>Cyrus Lorenzo</h1>
             <p className="hero-copy">
-              I am helping people and businesses adopt AI thoughtfully and
-              effectively, turning machine intelligence into practical outcomes.
+              Rising software developer crafting digital experiences from scratch,
+              fueled by curiosity, late-night commits, and coffee
             </p>
             <a className="scroll-down" href="#about">
               Scroll down
@@ -81,14 +81,16 @@ export default function App() {
         <section id="about" className="section reveal">
           <h2>About</h2>
           <p>
-            I am a Product Engineer and AI Researcher. Over the last years I
-            have worked with top tech companies and startups, and with global
-            brands and marketing teams, to turn AI capabilities into products
-            that people actually use.
+            I'm an undegraduate Computer Information Systems student who build things
+            before fully knowing how - and figure things out along the way.
+            Im still exploring where I fit in the tech world, but that curiosity is exactly 
+            what drives me. Whether it's a front-end interface, a back-end logic puzzle. I show up,
+            open a terminal and start typing. Late nights, cold coffee, and a stubborns refusal to 
+            leave a bug unsolved ~that's my process.
           </p>
+          
           <p>
-            I split my work between strategy, prototyping, and speaking about
-            where AI is heading next.
+
           </p>
           <p className="clients-line">
             <strong>Clients and Employers:</strong> {clients.join(", ")}.
