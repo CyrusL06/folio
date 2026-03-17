@@ -142,7 +142,7 @@ export default function App() {
                 style={{ "--delay": `${index * 90}ms` }}
               >
                 <p className="entry-title">
-                  <span>{item.date}</span> {item.title}
+                  <span >{item.date}</span> <br/>{`${item.title}`}
                 </p>
                 <a href={item.link}>Read article</a>
               </li>

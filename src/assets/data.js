@@ -44,8 +44,8 @@ export const speaking = [
 
 export const writing = [
   {
-    date: "February 15, 2024",
-    title: "Why 2024 will be the turning point for AI-native creativity",
+    date: "March 16, 2026 - On Process:",
+    title: "When the Market Breaks: Can Machine Learning Detect Bond Market Anomalies Before They Cascade",
     link: "#",
   },
 ];
